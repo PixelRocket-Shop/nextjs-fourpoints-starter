@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Aurevo",
+    "logo": "/images/aurevo-logo.svg"
+  },
+  {
+    "id": 2,
+    "name": "Syra",
+    "logo": "/images/syra-logo.svg"
+  },
+  {
+    "id": 3,
+    "name": "Axiomatic",
+    "logo": "/images/axiomatic-logo.svg"
+  },
+  {
+    "id": 4,
+    "name": "Lume",
+    "logo": "/images/lume-logo.svg"
+  },
+  {
+    "id": 5,
+    "name": "Cronix",
+    "logo": "/images/cronix-logo.svg"
+  }
+]

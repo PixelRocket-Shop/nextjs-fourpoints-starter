@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": "$9",
+    "period": "per month",
+    "description": "Perfect for individuals getting started",
+    "features": [
+      "Up to 5 projects",
+      "10GB storage",
+      "Email support",
+      "Basic analytics"
+    ],
+    "popular": false
+  },
+  {
+    "id": 2,
+    "name": "Professional",
+    "price": "$29",
+    "period": "per month",
+    "description": "Best for growing businesses",
+    "features": [
+      "Unlimited projects",
+      "100GB storage",
+      "Priority support",
+      "Advanced analytics",
+      "Custom integrations"
+    ],
+    "popular": true
+  },
+  {
+    "id": 3,
+    "name": "Enterprise",
+    "price": "$99",
+    "period": "per month",
+    "description": "For large organizations",
+    "features": [
+      "Everything in Professional",
+      "Unlimited storage",
+      "Dedicated support",
+      "Custom solutions",
+      "On-premise deployment"
+    ],
+    "popular": false
+  }
+]

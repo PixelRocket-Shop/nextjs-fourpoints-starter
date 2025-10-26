@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom screens */
+  --breakpoint-xs: 480px;
+  --breakpoint-3xl: 1820px;
+
+  /* Custom colors from fourpoints config */
+  --color-pink-50: #fff1f3;
+  --color-pink-100: #ffe4e8;
+  --color-pink-200: #fecdd7;
+  --color-pink-300: #fea3b7;
+  --color-pink-400: #fc7090;
+  --color-pink-500: #f53d6c;
+  --color-pink-600: #e21c58;
+  --color-pink-700: #bf114a;
+  --color-pink-800: #a01145;
+  --color-pink-900: #891241;
+
+  --color-pinkSecondary-50: #fbe8ea;
+  --color-pinkSecondary-100: #f6d5d9;
+  --color-pinkSecondary-200: #eeb3b9;
+  --color-pinkSecondary-300: #e48894;
+  --color-pinkSecondary-400: #d65d71;
+  --color-pinkSecondary-500: #c13d58;
+  --color-pinkSecondary-600: #a22e4a;
+  --color-pinkSecondary-700: #882942;
+  --color-pinkSecondary-800: #75263d;
+  --color-pinkSecondary-900: #320d17;
+
+  --color-darkPink-50: #f7e0dd;
+  --color-darkPink-100: #efbdb9;
+  --color-darkPink-200: #e4918d;
+  --color-darkPink-300: #d85f60;
+  --color-darkPink-400: #cf4046;
+  --color-darkPink-500: #c13545;
+  --color-darkPink-600: #a02e41;
+  --color-darkPink-700: #812b3c;
+  --color-darkPink-800: #682633;
+  --color-darkPink-900: #1f0a0f;
+
+  --color-sweetPink-50: #fff1f4;
+  --color-sweetPink-100: #fee5ea;
+  --color-sweetPink-200: #fdceda;
+  --color-sweetPink-300: #fa9eb5;
+  --color-sweetPink-400: #f77598;
+  --color-sweetPink-500: #ef4477;
+  --color-sweetPink-600: #db2362;
+  --color-sweetPink-700: #b91753;
+  --color-sweetPink-800: #9b164c;
+  --color-sweetPink-900: #851646;
+
+  --color-blue-50: #ecf6ff;
+  --color-blue-100: #ddeeff;
+  --color-blue-200: #c2dfff;
+  --color-blue-300: #9cc8ff;
+  --color-blue-400: #75a6ff;
+  --color-blue-500: #6691ff;
+  --color-blue-600: #365df5;
+  --color-blue-700: #3a4ad8;
+  --color-blue-800: #2541ae;
+  --color-blue-900: #263d89;
+
+  --color-blueSecondary-50: #dee8ff;
+  --color-blueSecondary-100: #c4d4ff;
+  --color-blueSecondary-200: #a0b7ff;
+  --color-blueSecondary-300: #7a8fff;
+  --color-blueSecondary-400: #5b68f9;
+  --color-blueSecondary-500: #3d3eee;
+  --color-blueSecondary-600: #3230d2;
+  --color-blueSecondary-700: #2929aa;
+  --color-blueSecondary-800: #292b86;
+  --color-blueSecondary-900: #0f0f30;
+
+  --color-darkBlue-50: #dee8ff;
+  --color-darkBlue-100: #c4d4ff;
+  --color-darkBlue-200: #a0b7ff;
+  --color-darkBlue-300: #7a8fff;
+  --color-darkBlue-400: #5b68f9;
+  --color-darkBlue-500: #3d3eee;
+  --color-darkBlue-600: #3230d2;
+  --color-darkBlue-700: #2929aa;
+  --color-darkBlue-800: #292b86;
+  --color-darkBlue-900: #0a0a20;
+
+  --color-sweetBlue-50: #eef4ff;
+  --color-sweetBlue-100: #e1eafe;
+  --color-sweetBlue-200: #c8d9fd;
+  --color-sweetBlue-300: #b6cafb;
+  --color-sweetBlue-400: #849bf5;
+  --color-sweetBlue-500: #6679ee;
+  --color-sweetBlue-600: #4952e2;
+  --color-sweetBlue-700: #3b40c7;
+  --color-sweetBlue-800: #3238a1;
+  --color-sweetBlue-900: #30367f;
+
+  --color-green-50: #f4fbf2;
+  --color-green-100: #e5f8e0;
+  --color-green-200: #cdefc3;
+  --color-green-300: #a4e095;
+  --color-green-400: #7acc66;
+  --color-green-500: #50ae39;
+  --color-green-600: #3e8f2a;
+  --color-green-700: #327124;
+  --color-green-800: #2b5a21;
+  --color-green-900: #244a1d;
+
+  --color-greenSecondary-50: #d8ffed;
+  --color-greenSecondary-100: #b4fedb;
+  --color-greenSecondary-200: #79fcc0;
+  --color-greenSecondary-300: #38f09c;
+  --color-greenSecondary-400: #0ed97e;
+  --color-greenSecondary-500: #05b465;
+  --color-greenSecondary-600: #088d52;
+  --color-greenSecondary-700: #0c6f44;
+  --color-greenSecondary-800: #0c5b39;
+  --color-greenSecondary-900: #002f1c;
+
+  --color-darkGreen-50: #d3f8de;
+  --color-darkGreen-100: #abefc3;
+  --color-darkGreen-200: #74e1a1;
+  --color-darkGreen-300: #3ccb7c;
+  --color-darkGreen-400: #18b161;
+  --color-darkGreen-500: #0c8f4d;
+  --color-darkGreen-600: #0a7241;
+  --color-darkGreen-700: #0a5b35;
+  --color-darkGreen-800: #0a4a2d;
+  --color-darkGreen-900: #031f13;
+
+  --color-sweetGreen-50: #edfee7;
+  --color-sweetGreen-100: #d6fccb;
+  --color-sweetGreen-200: #b0fa9e;
+  --color-sweetGreen-300: #7cf363;
+  --color-sweetGreen-400: #50e833;
+  --color-sweetGreen-500: #2fce14;
+  --color-sweetGreen-600: #20a40c;
+  --color-sweetGreen-700: #1a7d0e;
+  --color-sweetGreen-800: #1a6311;
+  --color-sweetGreen-900: #185413;
+
+  --color-gray-50: #F5F4F4;
+  --color-gray-100: #E9E7E7;
+  --color-gray-200: #D8D5D5;
+  --color-gray-300: #BAB5B6;
+  --color-gray-400: #A7A0A0;
+  --color-gray-500: #918889;
+  --color-gray-600: #6F6768;
+  --color-gray-700: #5D5657;
+  --color-gray-800: #403B3C;
+  --color-gray-900: #2A2728;
+
+  /* Body colors - custom theme values */
+  --color-body-bg: #fff;
+  --color-body-text: #1E2238;
+
+  /* Font families */
+  --font-family-heading: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-body: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Border radius */
+  --radius-xs: 0.125rem;
+  --radius-4xl: 1.875rem;
+  --radius-5xl: 2.5rem;
+
+  /* Custom animations */
+  --animate-movingLeft: movingLeft 35s linear infinite;
+  --animate-movingRight: movingRight 35s linear infinite;
+  --animate-pulseText: pulseText 10s ease-in-out infinite;
+  --animate-pulseTextDark: pulseTextDark 10s ease-in-out infinite;
+  --animate-pulseTextGreen: pulseTextGreen 10s ease-in-out infinite;
+  --animate-showLine: showLine 5s linear infinite;
+  --animate-searchInput: showSearchInput 1s linear;
+  --animate-fill: animFill 500ms linear both;
+
+  /* Custom box shadows */
+  --shadow-pink: 0px 2px 8px 4px rgba(255, 26, 106, 0.20), 0px 0px 2px 0px #110407;
+  --shadow-blue: 0px 2px 8px 4px rgba(100, 153, 255, 0.20), 0px 0px 2px 0px #110407;
+  --shadow-green: 0px 2px 8px 4px rgba(111, 211, 105, 0.20), 0px 0px 2px 0px #110407;
+}
+
+:root {
+  /* Custom properties for body styling */
+  --color-body: #fff;
+  --text-body: #1E2238;
+}
+
+/* Custom utility classes */
+.bg-body {
+  background-color: var(--color-body-bg);
+}
+
+.text-body {
+  color: var(--color-body-text);
+}
+
+.font-body {
+  font-family: var(--font-family-body);
+}
+
+.font-heading {
+  font-family: var(--font-family-heading);
+}
+
+/* Custom keyframes for animations */
+@keyframes movingLeft {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(-700px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes movingRight {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(700px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes pulseText {
+  0% { color: #041109; }
+  25% { color: #E3E8E5; }
+  70% { color: #E3E8E5; }
+  100% { color: #041109; }
+}
+
+@keyframes pulseTextDark {
+  0% { color: #19251D; }
+  25% { color: #FFF; }
+  70% { color: #FFF; }
+  100% { color: #19251D; }
+}
+
+@keyframes pulseTextGreen {
+  0% { color: #2B4F36; }
+  25% { color: #FFF; }
+  70% { color: #FFF; }
+  100% { color: #2B4F36; }
+}
+
+@keyframes showLine {
+  0% { width: 200px; }
+  25% { width: 600px; }
+  50% { width: 600px; }
+  100% { width: 200px; }
+}
+
+@keyframes showSearchInput {
+  0% { width: 0px; }
+  100% { width: 180px; }
+}
+
+@keyframes animFill {
+  0% { width: 0px; }
+  100% { width: 100%; }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Simple Accounting",
+    "description": "Keep track of your financial transactions with ease and simplicity.",
+    "image": "/images/feature-1.png",
+    "gradient": "bg-gradient-to-b from-darkBlue-900 via-blue-700 to-blue-400",
+    "layout": "imageRight",
+    "features": [
+      "Automated financial tracking",
+      "Easy invoicing and payment reminders",
+      "Real-time access to your financial data"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Multiple Accounts",
+    "description": "Gain a comprehensive overview of all your accounts.",
+    "image": "/images/feature-2.png",
+    "gradient": "bg-sweetBlue-300",
+    "layout": "imageLeft",
+    "textColor": "text-darkBlue-900",
+    "features": []
+  },
+  {
+    "id": 3,
+    "title": "Detailed Analytics",
+    "description": "Get detailed insights about your financial health with our analytics feature.",
+    "image": "/images/feature-3.png",
+    "gradient": "bg-sweetBlue-300",
+    "layout": "imageRight",
+    "textColor": "text-darkBlue-900",
+    "features": []
+  },
+  {
+    "id": 4,
+    "title": "Cloud-Based",
+    "description": "Access your financial data anywhere, anytime with our cloud-based system.",
+    "image": "/images/feature-4.png",
+    "gradient": "bg-gradient-to-t from-darkBlue-900 via-blue-700 to-blue-400",
+    "layout": "imageLeft",
+    "textColor": "text-white",
+    "features": []
+  }
+]

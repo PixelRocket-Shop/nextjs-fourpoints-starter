@@ -1,0 +1,29 @@
+[
+  {
+    "name": "David Dobryk",
+    "position": "Founder & CEO",
+    "image": "/images/team-1.png",
+    "socialLinks": [
+      { "platform": "twitter", "url": "#" },
+      { "platform": "linkedin", "url": "#" }
+    ]
+  },
+  {
+    "name": "Milena Graz",
+    "position": "Founder & CEO",
+    "image": "/images/team-2.png",
+    "socialLinks": [
+      { "platform": "twitter", "url": "#" },
+      { "platform": "linkedin", "url": "#" }
+    ]
+  },
+  {
+    "name": "Mike Nelson",
+    "position": "Head of Technology",
+    "image": "/images/team-3.png",
+    "socialLinks": [
+      { "platform": "twitter", "url": "#" },
+      { "platform": "linkedin", "url": "#" }
+    ]
+  }
+]
